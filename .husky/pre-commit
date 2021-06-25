@@ -3,4 +3,4 @@
 
 # npx eslint --fix ./src --ext .vue,.ts,.js
 
-npx lint-staged
+# npx lint-staged

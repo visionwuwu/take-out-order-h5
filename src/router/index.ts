@@ -18,7 +18,8 @@ const routes: Array<RouteRecordRaw> = [
           navbar: {
             title: '三舞餐厅'
           },
-          showTab: true
+          showTab: true,
+          auth: false
         }
       },
       {
@@ -43,7 +44,8 @@ const routes: Array<RouteRecordRaw> = [
           navbar: {
             title: '三舞餐厅'
           },
-          showTab: true
+          showTab: true,
+          auth: true,
         }
       },
       {
@@ -56,7 +58,8 @@ const routes: Array<RouteRecordRaw> = [
           navbar: {
             title: '订单评论',
             leftArrow: true
-          }
+          },
+          auth: true,
         }
       },
       {
@@ -71,7 +74,8 @@ const routes: Array<RouteRecordRaw> = [
             leftArrow: true,
             backPath: '/kind'
           },
-          showTab: false
+          showTab: false,
+          auth: true,
         }
       },
       {
@@ -79,7 +83,8 @@ const routes: Array<RouteRecordRaw> = [
         name: 'OrderDetail',
         component: () => import('views/order-detail/index.vue'),
         meta: {
-          title: '订单详情'
+          title: '订单详情',
+          auth: true,
         }
       },
       {
@@ -93,7 +98,8 @@ const routes: Array<RouteRecordRaw> = [
             title: '地址列表',
             leftArrow: true
           },
-          showTab: false
+          showTab: false,
+          auth: true,
         }
       },
       {
@@ -102,7 +108,8 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('views/address-edit-or-add/index.vue'),
         meta: {
           title: '编辑地址',
-          showTab: false
+          showTab: false,
+          auth: true,
         }
       },
       {
@@ -116,7 +123,8 @@ const routes: Array<RouteRecordRaw> = [
             leftArrow: true,
             backPath: '/kind'
           },
-          showTab: false
+          showTab: false,
+          auth: true,
         }
       },
       {
@@ -125,7 +133,8 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('views/my/index.vue'),
         meta: {
           title: '我的',
-          showTab: true
+          showTab: true,
+          auth: true,
         }
       }
     ]

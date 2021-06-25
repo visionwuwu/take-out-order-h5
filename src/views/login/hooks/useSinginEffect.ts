@@ -18,8 +18,8 @@ export const useSigninEffect = () => {
 
   const { redirect } = useCurrentRoute()
   const form = reactive<FormType>({
-    username: '',
-    password: '',
+    username: 'editor',
+    password: '123456',
     loading: false
   })
   const onSubmit = (values: LoginModel) => {

@@ -17,5 +17,6 @@ declare module 'vue-router' {
     deepth?: number
     navbar?: Navbar
     showTab?: boolean
+    auth?: boolean
   }
 }
